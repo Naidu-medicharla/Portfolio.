@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veera Venkata Naidu Medicharla | Portfolio</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <link href="https://fonts.googleapis.com/css2?family=Above+The+Beyond+Script&display=swap" rel="stylesheet">
+
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png') }}">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo" id="logo">
+               <span class="logo-text">VVNM</span>
+            </div>
+
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+ <section id="home" class="section">
+  <div class="container">
+    <div class="home-content">
+  <!-- TEXT NOW ON THE LEFT -->
+  <div class="home-text" data-aos="fade-right">
+    <h1>Hi, I'm Veera Venkata Naidu</h1>
+    <div class="typewriter">
+      <span id="typewriter-text"></span>
+    </div>
+    <p class="subtitle">ECE Student & Data Analyst</p>
+    <div class="cta-buttons">
+      <a href="{{ url_for('download_resume') }}" class="btn primary-btn">
+        <i class="fas fa-download"></i>   Download Resume
+      </a>
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/yourusername" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+      <a href="https://instagram.com/bunny_.naidu" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <!-- IMAGE NOW ON THE RIGHT -->
+  <div class="home-image" data-aos="fade-left">
+    <img src="{{ url_for('static', filename='images/1.png') }}" alt="Veera Venkata Naidu" class="home-img">
+     <div class="name-typewriter">
+    <span id="name-typewriter-text"></span>
+  </div>
+  </div>
+</div>
+
+  </div>
+
+  <div class="wave-divider">
+  <svg viewBox="0 0 1440 320" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#fff8de" />
+        <stop offset="100%" stop-color="#fff8de" />
+      </linearGradient>
+    </defs>
+    <path fill="url(#waveGradient)" fill-opacity="1"
+     style="filter: drop-shadow(0 -4px 12px rgba(0, 0, 0, 0.1));"
+      d="M0,224L60,197.3C120,171,240,117,360,112C480,107,600,149,720,160C840,171,960,149,1080,138.7C1200,128,1320,128,1380,128L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+    </path>
+  </svg>
+</div>
+
+
+</section>
+
+
+<section id="about" class="section" style="background-color: #fff8de; color: #253850;">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up" style="color: #253850;">About Me</h2>
+    <div class="about-content">
+      <div class="about-text" data-aos="fade-up">
+        <p>
+          I’m Veera Venkata Naidu Medicharla, an Electronics and Communication Engineering (ECE) graduate from BVC College. While my academic foundation is rooted in electronics, I’ve always maintained a strong parallel interest in software development. From my very first year, I consistently balanced both hardware and software, driven by curiosity and a passion for technology.
+
+Beyond academics, I developed a Student Management System web application, which sparked my deeper interest in full-stack development. I’m confident in my ability to quickly adapt to new domains, and I thrive when exploring unfamiliar technologies. Logical reasoning, mathematics, and tech exploration are areas I genuinely enjoy, and I often spend my free time learning and expanding my knowledge through social media and online platforms.
+
+Currently, I’m working at Kaara Tech, where I continue to grow as a developer. One of my core strengths is persistence—once I set a goal, I pursue it with determination. In the future, I aspire to venture into entrepreneurship and establish businesses across multiple domains
+        </p>
+
+        <h3 class="edu-heading">Education</h3>
+        <div class="education-grid">
+
+          <!-- School -->
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="edu-icon"><i class="fas fa-school"></i></div>
+            <h4>Vidyanidhi IIT Talent School 2019</h4>
+            <p>SSC – 9.7 GPA</p>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="edu-icon"><i class="fas fa-flask"></i></div>
+            <h4>Veda Junior College  <br>  2019-2021</h4>
+            <p>Intermediate – 9.5 GPA</p>
+          </div>
+
+          <!-- Graduation -->
+          <div class="edu-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h4>BVC College of Engineering 2021-2025</h4>
+            <p>B.Tech ECE – 8.9 CGPA</p>
+          </div>
+        
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+</section>
+
+  <!-- <div class="bg-bubble bubble-top-left"></div>
+  <div class="bg-bubble bubble-bottom-right"></div> -->
+  <!-- <img src="{{ url_for('static', filename='images/blob1.svg') }}" class="bg-blob blob-top-left"> -->
+
+
+
+</section>
+
+<section id="skills" class="section skills-section">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up" style="color: #253850;">Skills</h2>
+
+    <div class="skills-grid">
+      <!-- Row 1 -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="0">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="35">
+        <h3>HTML</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="35">
+        <h3>CSS</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="35">
+        <h3>Python</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" width="35">
+        <h3>C</h3>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="35">
+        <h3>SQL</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <img src="https://img.icons8.com/color/48/microsoft-excel-2019--v1.png" alt="Excel" width="35">
+        <h3>Excel</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="600">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" width="35">
+        <h3>Flask</h3>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="35">
+        <h3>Django</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+   <section id="projects" class="projects">
+  <div class="container">
+   <h2 class="section-title" data-aos="fade-up" style="color: #253850;">Projects</h2>
+
+    <div class="projects-content">
+
+      <!-- Project 1 -->
+      <!-- Project 1 -->
+<div class="project-card" data-aos="fade-right" data-aos-duration="1000">
+  <div class="project-image">
+    <img src="{{ url_for('static', filename='images/hg.png') }}" alt="Gesture Project">
+  </div>
+  <div class="project-description">
+    <h3>Gesture-Controlled Home Appliances</h3>
+    <p>This project enables home appliances to be controlled using hand gestures. A Raspberry Pi processes gesture inputs and translates them into commands to operate devices, enhancing convenience and accessibility.</p>
+    <a href="#" class="project-link">GitHub</a>
+  </div>
+</div>
+
+<!-- Project 2 -->
+<div class="project-card" data-aos="fade-left" data-aos-duration="1000">
+  <div class="project-description">
+    <h3>Student Management System</h3>
+    <p>I developed a Student Management System where teachers generate an OTP for attendance, and students use it to mark their attendance. This streamlined process saves time by enabling students to self-enter their attendance efficiently.</p>
+    <a href="#" class="project-link">GitHub</a>
+  </div>
+  <div class="project-image">
+    <img src="{{ url_for('static', filename='images/sms.png') }}" alt="SMS Project">
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+ 
+ <section id="contact" class="section contact-section-custom">
+  <div class="container contact-flex">
+
+    <!-- Right Side: Contact Info & Photo (DARK) -->
+    <div class="dark-section">
+      <!-- Heading moved here -->
+      <h2 class="section-title with-icon" data-aos="fade-up" style="color: #253850; text-align: left;">
+        Contact Me <i class="fas fa-phone ringing-icon"></i>
+      </h2>
+
+      <!-- Text content -->
+      <div class="contact-text-block">
+        <p class="contact-info">Name: Veera Venkata Naidu Medicharla</p>
+        <p class="contact-info">Email: <a href="mailto:yourmail@example.com">yourmail@example.com</a></p>
+        <p class="contact-info">Phone: <a href="tel:+919876543210">+91 98765 43210</a></p>
+      </div>
+
+      <!-- Image at bottom -->
+      <img src="{{ url_for('static', filename='images/image.png') }}" alt="Contact Image" class="contact-photo" />
+    </div>
+
+    <!-- Left Side: Contact Form (LIGHT) -->
+    <div class="contact-form-container light-section">
+      <!-- Removed "Contact Me" from here -->
+
+      <h3 class="get-in-touch-heading">Get in Touch</h3>
+
+      <form action="{{ url_for('send_message') }}" method="POST" class="contact-form">
+        <div class="form-group">
+          <input type="text" name="name" required placeholder="Your Name">
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" required placeholder="Your Email">
+        </div>
+        <div class="form-group">
+          <select name="reason" required>
+            <option value="">Select Reason</option>
+            <option value="Internship">Internship Opportunity</option>
+            <option value="Project">Project Collaboration</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea name="message" required placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+    <!-- Easter Egg Modal -->
+    <div id="easter-egg-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Fun Facts About Veera</h2>
+            <ul class="fun-facts">
+                <li>🎮 Loves playing chess</li>
+                <li>💻 Obsessed with clean code</li>
+                <li>🔧 Enjoys hardware tinkering</li>
+                <li>📊 Data visualization enthusiast</li>
+            </ul>
+            <div class="code-rain"></div>
+        </div>
+    </div>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message {{ category }}">
+                        {{ message }}
+                        <span class="close-flash">&times;</span>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+</body>
+<footer class="footer">
+  <p>&copy; 2025 Veera Venkata Naidu Medicharla</p>
+</footer>
+
+</html> 
